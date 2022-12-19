@@ -121,8 +121,20 @@ document.addEventListener("DOMContentLoaded", () => {
     mEth2krwdom.innerText = `${methval * mEthPrice} KRW`;
   });
 
-	roomsSelect = document.getElementById("rooms-select");
+  roomsSelect = document.getElementById("rooms-select");
   roomsSelect.addEventListener('change', displayRoomHistory);
+	
+//   선택적 구현
+//   document.getElementById("InActive").addEventListener("click", () => {
+//     const rId = document.getElementById("roomId").value;
+//     markRoomAsInactive(rId)
+//   });
+
+//   document.getElementById("ClearAll").addEventListener("click", () => {
+//     const rId = document.getElementById("roomId").value;
+//     initializeRoomShare(rId)
+//   });
+
 });
 
 const getDayOfYear = (date) => {
