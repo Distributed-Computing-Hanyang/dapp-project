@@ -316,7 +316,7 @@ const markRoomAsInactive = async (_roomId) => {
   // 소유한 방 중에서 선택한 방의 대여 가능 여부를 비활성화 한다.
 }
 
-const intializeRoomShare = async (_roomId) => {
+const initializeRoomShare = async (_roomId) => {
   // optional 2: 대여 초기화
   // 소유한 방 중에서 선택한 방의 대여된 일정을 모두 초기화 한다.
 }
