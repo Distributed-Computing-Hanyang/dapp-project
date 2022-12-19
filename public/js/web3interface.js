@@ -208,11 +208,11 @@ const listAllRooms = async () => {
 	for(let i = 0; i < allRooms.length; ++i) {
     if(allRooms[i].isActive == false)
 			continue;
-    const jsonstr = JSON.stringify(allRooms[i]).replace(" ","+");
+    const jsonstr = JSON.stringify(allRooms[i]).replaceAll(" ","+");
 		html += `<option value=${jsonstr}>`;
 			html += allRooms[i].id + " | "
 			html += allRooms[i].name + " | "
-			html += allRooms[i].location.replace("+"," ") + " | "
+			html += allRooms[i].location.replaceAll("+"," ") + " | "
 			html += allRooms[i].isActive + " | "
 			html += allRooms[i].price + " | "
 			html += allRooms[i].owner.slice(0,17)+"..."
